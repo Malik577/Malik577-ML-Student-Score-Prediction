@@ -1,0 +1,9 @@
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.env
+kaggle.json
+data/*
+!data/student_performance_demo.csv
+outputs/models/*
+outputs/figures/*

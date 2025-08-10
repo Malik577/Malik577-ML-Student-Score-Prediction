@@ -1,0 +1,11 @@
+id,study_hours,final_score,attendance,previous_scores,tutoring_sessions,sleep_hours,motivation_level,parental_involvement,access_to_resources,extracurricular_activities,internet_access,family_income,teacher_quality,school_type,peer_influence,physical_activity,learning_disabilities,parental_education_level,distance_from_home,gender
+1,8,85,90,78,2,7,High,Medium,Medium,Yes,Yes,Medium,High,Public,Positive,4,No,College,Near,Male
+2,6,72,85,65,1,6,Medium,Low,Low,No,Yes,Low,Medium,Public,Neutral,2,No,High School,Moderate,Female
+3,10,92,95,88,3,8,High,High,High,Yes,Yes,High,High,Private,Positive,5,No,Postgraduate,Near,Female
+4,4,65,75,60,0,5,Low,Low,Low,No,No,Low,Medium,Public,Negative,1,Yes,High School,Far,Male
+5,7,78,88,72,2,7,Medium,Medium,Medium,Yes,Yes,Medium,Medium,Public,Neutral,3,No,College,Moderate,Female
+6,9,88,92,82,2,8,High,High,Medium,Yes,Yes,High,High,Private,Positive,4,No,Postgraduate,Near,Male
+7,5,70,80,68,1,6,Medium,Low,Medium,No,Yes,Medium,Medium,Public,Neutral,2,No,High School,Far,Female
+8,11,95,98,90,3,8,High,High,High,Yes,Yes,High,High,Private,Positive,5,No,Postgraduate,Near,Male
+9,3,60,70,58,0,5,Low,Low,Low,No,No,Low,Low,Public,Negative,1,Yes,High School,Far,Female
+10,8,82,89,76,2,7,High,Medium,Medium,Yes,Yes,Medium,High,Public,Positive,4,No,College,Moderate,Male 
