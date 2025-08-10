@@ -1,74 +1,69 @@
-# 🎓 Student Performance Predictor
+# Student Performance Predictor
 
-> **AI-Powered Academic Success Analysis Platform**
+A machine learning system that predicts student academic performance using a Python backend and a React + TypeScript frontend.
 
-A comprehensive machine learning system that predicts student academic performance using advanced analytics and interactive web interfaces. Built with Python ML backend and React TypeScript frontend.
+## Features
 
-![Project Banner](assets/images/project-banner.png)
+- Machine learning pipeline (linear regression) with feature engineering
+- Interactive dashboard with real-time pipeline execution and metrics
+- Multi-factor performance prediction
+- Python-generated visualizations and insights
+- Responsive web interface built with Tailwind CSS
 
-## 🚀 Features
-
-- **🤖 Machine Learning Pipeline**: Linear Regression model with comprehensive feature engineering
-- **📊 Interactive Dashboard**: Real-time ML pipeline execution and performance metrics
-- **🎯 Advanced Prediction**: Multi-factor student performance prediction (20+ features)
-- **📈 Data Visualization**: Generated charts and insights from Python analysis
-- **🌐 Modern Web Interface**: Responsive React application with Tailwind CSS
-- **📱 Educational Insights**: Performance correlation analysis and recommendations
-
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 student-performance-predictor/
-├── 📁 backend/                    # Python ML backend
-│   ├── data/                     # Dataset files
-│   │   ├── student_performance.csv   # Sample dataset (used by default)
-│   │   └── StudentPerformanceFactors.csv  # Full dataset (optional)
-│   ├── notebooks/                # Jupyter notebooks and scripts
-│   ├── plots/                    # Generated plots from ML run
-│   ├── venv/                     # Python virtual environment (auto-created)
-│   ├── config.py                 # Backend config (paths, params)
-│   ├── main.py                   # Backend entrypoint (runs pipeline)
-│   ├── requirements.txt          # Python dependencies
-│   └── ml/                       # Reusable ML utilities
-├── 📁 src/                       # React frontend
-│   ├── components/               # Reusable UI components
-│   ├── hooks/                    # Custom React hooks
-│   ├── pages/                    # Page components (e.g., Dashboard)
-│   ├── services/                 # Frontend services (MLService)
-│   ├── types/                    # TypeScript types
-│   ├── utils/                    # Utility functions (mlUtils)
-│   ├── App.tsx                   # App shell
-│   ├── main.tsx                  # Frontend entry
-│   └── index.css                 # Tailwind setup
-├── assets/                       # Static assets
-├── dist/                         # Production build (vite)
-├── Makefile                      # Dev tasks (frontend/backend/all)
-├── package.json                  # NPM scripts
-├── index.html                    # HTML entry
-├── tailwind.config.js            # Tailwind config
-├── postcss.config.js             # PostCSS config
-└── eslint.config.js              # ESLint (flat config)
+├── backend/                    # Python ML backend
+│   ├── data/                   # Datasets
+│   │   ├── student_performance.csv           # Sample dataset (default)
+│   │   └── StudentPerformanceFactors.csv     # Full dataset (optional)
+│   ├── notebooks/              # Jupyter notebooks and scripts
+│   ├── plots/                  # Generated plots
+│   ├── venv/                   # Python virtual environment (auto-created)
+│   ├── config.py               # Backend config
+│   ├── main.py                 # Backend entrypoint (runs pipeline)
+│   ├── requirements.txt        # Python dependencies
+│   └── ml/                     # Reusable ML utilities
+├── src/                        # React frontend
+│   ├── components/             # Reusable UI components
+│   ├── hooks/                  # Custom React hooks
+│   ├── pages/                  # Pages (e.g., Dashboard)
+│   ├── services/               # Frontend services (MLService)
+│   ├── types/                  # TypeScript types
+│   ├── utils/                  # Utility functions (mlUtils)
+│   ├── App.tsx                 # App shell
+│   ├── main.tsx                # Frontend entry
+│   └── index.css               # Tailwind setup
+├── assets/                     # Static assets
+├── dist/                       # Production build (vite)
+├── Makefile                    # Dev tasks (frontend/backend/both)
+├── package.json                # NPM scripts
+├── index.html                  # HTML entry
+├── tailwind.config.js          # Tailwind config
+├── postcss.config.js           # PostCSS config
+└── eslint.config.js            # ESLint config (flat)
 ```
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Backend (Python)
-- **Machine Learning**: scikit-learn, pandas, numpy
-- **Data Visualization**: matplotlib, seaborn
-- **Development**: Jupyter notebooks, virtual environments
+- scikit-learn, pandas, numpy
+- matplotlib, seaborn
+- Jupyter notebooks
 
 ### Frontend (React)
-- **Framework**: React 18 with TypeScript
-- **Styling**: Tailwind CSS
-- **Build Tool**: Vite
-- **Icons**: Lucide React
+- React 18 + TypeScript
+- Tailwind CSS
+- Vite
+- Lucide React icons
 
-## 📊 Dataset
+## Dataset
 
-- Default (used by pipeline): `backend/data/student_performance.csv` (sample records)
-- Optional full dataset: `backend/data/StudentPerformanceFactors.csv` (6,607 records, 20+ features)
+- Default dataset: `backend/data/student_performance.csv`
+- Optional full dataset: `backend/data/StudentPerformanceFactors.csv` (6,607 records)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+ and npm
@@ -79,7 +74,7 @@ student-performance-predictor/
 # Install frontend deps + create Python venv + install backend deps
 npm run setup
 
-# Start frontend (vite)
+# Start frontend (Vite)
 npm run dev
 # Open the printed URL (5173 or 5174)
 
@@ -90,69 +85,33 @@ npm run backend
 npm run all
 ```
 
-## 🔧 Development
+## Development
 
 ### Frontend
 ```bash
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run preview      # Preview production build
-npm run lint         # Run ESLint (frontend only)
+npm run dev
+npm run build
+npm run preview
+npm run lint
 ```
 
 ### Backend
 ```bash
-npm run backend      # Runs backend/main.py inside venv
-# or, manually
+npm run backend
+# or manually
 cd backend && python3 -m venv venv && . venv/bin/activate && python3 main.py
 ```
 
-## 📈 Model Performance
+## Model Performance
 
-- **R² Score**: ~0.6–0.7 (varies with dataset split)
-- **RMSE/MAE**: See terminal output and generated plots
-- **Key Predictors**: Study hours, attendance, previous scores
+- R² score typically around 0.6–0.7 depending on data split
+- RMSE / MAE reported in terminal and saved plots
+- Key predictors: study hours, attendance, previous scores
 
-## 🎯 Use Cases
-
-- **Educators**: Identify at-risk students early
-- **Students**: Understand performance factors
-- **Administrators**: Data-driven policy decisions
-- **Researchers**: Academic performance analysis
-
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Commit: `git commit -m "Add your feature"`
+4. Push: `git push origin feature/your-feature`
 5. Open a Pull Request
-
-## 🏃 Run
-
-- Frontend (Vite):
-  ```bash
-  npm run dev
-  ```
-  Open the printed URL (e.g., http://localhost:5173 or http://localhost:5174)
-
-- Backend (Python ML pipeline):
-  ```bash
-  npm run backend
-  ```
-  Outputs plots in `backend/plots/` and logs in terminal
-
-- Both together:
-  ```bash
-  npm run all
-  ```
-
-- First-time setup:
-  ```bash
-  npm run setup
-  ```
-
-- Lint frontend code:
-  ```bash
-  npm run lint
-  ```

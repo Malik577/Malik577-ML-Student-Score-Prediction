@@ -7,3 +7,4 @@ data/*
 !data/student_performance_demo.csv
 outputs/models/*
 outputs/figures/*
+node_modules
